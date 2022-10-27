@@ -20,7 +20,7 @@ public class CodingTankFinal {
     
         System.out.print("\nQual o tipo de média deverá ser calculada?\n");
         String tipoDeMedia = input.next();
-        System.out.println("\nA média dos " + tamanho + " valores será calculada.");
+        System.out.println("\nA média " + tipoDeMedia + "dos " + tamanho + " valores será calculada.");
         
         double mediaAritmetica = calculaMediaAritmetica(valores);
         System.out.println("\nA média aritmética dos " + tamanho + " valores é " + mediaAritmetica);
