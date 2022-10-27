@@ -19,7 +19,7 @@ public class CodingTankFinal {
         }
     
         System.out.print("\nQual o tipo de média deverá ser calculada?\n");
-        final String tipoDeMedia = getString(input);
+        String tipoDeMedia = input.next();
         System.out.println("\nA média dos " + tamanho + " valores será calculada.");
         
         double mediaAritmetica = calculaMediaAritmetica(valores);
@@ -53,11 +53,6 @@ public class CodingTankFinal {
             return getDoubleNumber(input);
         }
     }
-    public static String getString(Scanner input) {
-        System.out.println("Digite HARMONICA ou ARITMETICA: ");
-        return input.nextLine();
-    }
-    
     public static double calculaMediaAritmetica(double[] valores){
         double soma = 0;
         for (double i : valores) {
